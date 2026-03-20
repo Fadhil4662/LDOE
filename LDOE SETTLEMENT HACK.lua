@@ -1,134 +1,118 @@
-local target_process = "zombie.survival.craft.z"
-local target_name = "Last Day On Earth: Survival"
+mpdbm!b>#zpncjf/tvswjwbm/dsbgu/{#
+mpdbm!c>#Mbtu!Ebz!Po!Fbsui;!Tvswjwbm#
+mpdbm!bsd>hh/hfuUbshfuJogp)*
 
-local arch = gg.getTargetInfo()
+jg!hh/hfuUbshfuQbdlbhf)*~=b!uifo
+hh/bmfsu)#Xspoh!hbnf"\oPqfo!#..c*
+pt/fyju)* 
+foe
 
-if gg.getTargetPackage() ~= target_process then
-    gg.alert("Wrong game!\nOpen "..target_name)
-    os.exit()
-end
+mpdbm!e>bsd/y75!boe!55!ps!33
 
-local offset = arch.x64 and 44 or 22
+gvodujpo!f()!
+mpdbm!g>hh/bmfsu)#Xfmdpnf!Up!Ibdl!Tfuumfnfou#-#\Ofyu^#,#\Fyju^#*
+jg!g>>3!uifo
+qsjou)#Xiz!Zpv!Fyju#*
+pt/fyju)* 
+foe
+foe
 
-function StartMenu()
-    local c = gg.alert("Welcome To Hack Settlement", "[Next]", "[Exit]")
-    if c == 2 then
-        print("Why You Exit >:[ \nexecute again!")
-        os.exit()
-    end
-end
+gvodujpo!h()!
+mpdbm!i>hh/dipjdf)|#Ibdl!Ofx!Cbtf#,#Hvjef#,#Fyju#~-ojm-#Ibdl!Tfuumfnfou#*
+jg!i>>2!uifo!j()!foe
+jg!i>>3!uifo!k()!foe
+jg!i>>4!uifo!l()!foe
+foe
 
-function HOME()
-    local menu = gg.choice({
-        "Hack New Base",
-        "Guide",
-        "Exit"
-    }, nil, "Hack Settlement Menu")
+gvodujpo!l()!
+qsjou)#Uibolt!gps!vtjoh#*
+pt/fyju)* 
+foe
 
-    if menu == 1 then HackSettlement() end
-    if menu == 2 then Guide() end
-    if menu == 3 then Exit() end
-end
+gvodujpo!j()!
+xijmf!usvf!ep
+mpdbm!m>hh/nvmujDipjdf)|#G2#,#G3#,#X2#,#Xjo2#,#E2#,#Cbdl#~-ojm-#Tfmfdu#*
+jg!m==ojm!uifo!csfbl!foe
+jg!m\2^!uifo!n()!foe
+jg!m\3^!uifo!o()!foe
+jg!m\4^!uifo!p()!foe
+jg!m\5^!uifo!q()!foe
+jg!m\6^!uifo!r()!foe
+jg!m\7^!uifo!sfuvso!foe
+foe
+foe
 
-function Exit()
-    print("Thanks for using my script :> \nthe script was made by Fadhil :3 \n\nThanks to temujin for helping me with the script")
-    os.exit()
-end
+gvodujpo!n()!
+hh/dmfbsSftvmut)*
+hh/tfuSbohft)hh/SFHJPO`BOPOZNPVT*
+hh/tfbsdiOvncf s)#R!26!11!11!11!#ofx`cbtf`gpvoebujpo`2#-2*
+hh/tfbsdiOvncf s)#32#-2*
+mpdbm!s>hh/hfuSftvmut)2*
+jg!\$s==1!uifo!hh/bmfsu)#OG#*!sfuvso!foe
+hh/mpbeSftvmut)|{beesftt>s\2^/beesftt,e-!gmbht>5}}*
+hh/fejuBmm)#61#,hh/UZQF`EXPSE*
+hh/dmfbsSftvmut)*
+hh/upbtu)#G2#*
+foe
 
-function HackSettlement()
-    while true do
-        local choice = gg.multiChoice({
-            "Floor Level 2",
-            "Floor Level 3",
-            "Wall Level 2",
-            "Windows Level 2",
-            "Door Level 2",
-            "Back"
-        }, nil, "Select Hack")
+gvodujpo!o()!
+hh/dmfbsSftvmut)*
+hh/tfuSbohft)hh/SFHJPO`BOPOZNPVT*
+hh/tfbsdiOvncf s)#R!26!11!11!11!#ofx`cbtf`gpvoebujpo`3#-2*
+hh/tfbsdiOvncf s)#32#-2*
+mpdbm!s>hh/hfuSftvmut)2*
+jg!\$s==1!uifo!hh/bmfsu)#OG#*!sfuvso!foe
+hh/mpbeSftvmut)|{beesftt>s\2^/beesftt,e-!gmbht>5}}*
+hh/fejuBmm)#62#,hh/UZQF`EXPSE*
+hh/dmfbsSftvmut)*
+hh/upbtu)#G3#*
+foe
 
-        if choice == nil then break end
+gvodujpo!p()!
+hh/dmfbsSftvmut)*
+hh/tfuSbohft)hh/SFHJPO`BOPOZNPVT*
+hh/tfbsdiOvncf s)#R!27!11!11!11!#ofx`cbtf`tjnqmf`xbmm`2#-2*
+hh/tfbsdiOvncf s)#33#-2*
+mpdbm!s>hh/hfuSftvmut)2*
+jg!\$s==1!uifo!hh/bmfsu)#OG#*!sfuvso!foe
+hh/mpbeSftvmut)|{beesftt>s\2^/beesftt,e-!gmbht>5}}*
+hh/fejuBmm)#43879:6#,hh/UZQF`EXPSE*
+hh/dmfbsSftvmut)*
+hh/upbtu)#X2#*
+foe
 
-        if choice[1] then Floor_2() end
-        if choice[2] then Floor_3() end
-        if choice[3] then Wall_2() end
-        if choice[4] then Windows_2() end
-        if choice[5] then Door_2() end
+gvodujpo!q()!
+hh/dmfbsSftvmut)*
+hh/tfuSbohft)hh/SFHJPO`BOPOZNPVT*
+hh/tfbsdiOvncf s)#R!27!11!11!11!#ofx`cbtf`xjoepx`xbmm`2#-hh/UZQF`EXPSE*
+hh/tfbsdiOvncf s)#33#-hh/UZQF`EXPSE*
+mpdbm!s>hh/hfuSftvmut)2*
+jg!\$s==1!uifo!hh/bmfsu)#OG#*!sfuvso!foe
+hh/mpbeSftvmut)|{beesftt>s\2^/beesftt,e-!gmbht>5}}*
+hh/fejuBmm)#43879:6#,hh/UZQF`EXPSE*
+hh/dmfbsSftvmut)*
+hh/upbtu)#Xjo2#*
+foe
 
-        if choice[6] then return end
-    end
-end
+gvodujpo!r()!
+hh/dmfbsSftvmut)*
+hh/tfuSbohft)hh/SFHJPO`BOPOZNPVT*
+hh/tfbsdiOvncf s)#31<772:357<733714:<74681:1<772:362<76647:6<8385718<7337145<7468222<8188:::<432246:;;52#-hh/UZQF`EXPSE*
+hh/tfbsdiOvncf s)#432246:#-hh/UZQF`EXPSE*
+hh/fejuBmm)#43879:6#,hh/UZQF`EXPSE*
+hh/dmfbsSftvmut)*
+hh/upbtu)#E2#*
+foe
 
-function Floor_2()
-    gg.clearResults()
-    gg.setRanges(gg.REGION_ANONYMOUS)
-    gg.searchNumber("Q 15 00 00 00 \"new_base_foundation_1", 1)
-    gg.searchNumber("21", 1)
-    local t = gg.getResults(1)
-    if #t == 0 then gg.alert("Not found!") return end
-    gg.loadResults({{address = t[1].address + offset, flags = 4}})
-    gg.editAll("50", gg.TYPE_DWORD)
-    gg.clearResults()
-    gg.toast("Floor Level 2")
-end
+gvodujpo!k()!
+hh/bmfsu)#Tfmfdu!ibdl#*
+foe
 
-function Floor_3()
-    gg.clearResults()
-    gg.setRanges(gg.REGION_ANONYMOUS)
-    gg.searchNumber("Q 15 00 00 00 \"new_base_foundation_2", 1)
-    gg.searchNumber("21", 1)
-    local t = gg.getResults(1)
-    if #t == 0 then gg.alert("Not found!") return end
-    gg.loadResults({{address = t[1].address + offset, flags = 4}})
-    gg.editAll("51", gg.TYPE_DWORD)
-    gg.clearResults()
-    gg.toast("Floor Level 3")
-end
+f()!
 
-function Wall_2()
-    gg.clearResults()
-    gg.setRanges(gg.REGION_ANONYMOUS)
-    gg.searchNumber("Q 16 00 00 00 \"new_base_simple_wall_1", 1)
-    gg.searchNumber("22", 1)
-    local t = gg.getResults(1)
-    if #t == 0 then gg.alert("Not found!") return end
-    gg.loadResults({{address = t[1].address + offset, flags = 4}})
-    gg.editAll("3276895", gg.TYPE_DWORD)
-    gg.clearResults()
-    gg.toast("Wall Level 2")
-end
-
-function Windows_2()
-    gg.clearResults()
-    gg.setRanges(gg.REGION_ANONYMOUS)
-    gg.searchNumber("Q 16 00 00 00 \"new_base_window_wall_1", gg.TYPE_DWORD)
-    gg.searchNumber("22", gg.TYPE_DWORD)
-    local t = gg.getResults(1)
-    if #t == 0 then gg.alert("Not found!") return end
-    gg.loadResults({{address = t[1].address + offset, flags = 4}})
-    gg.editAll("3276895", gg.TYPE_DWORD)
-    gg.clearResults()
-    gg.toast("Windows Level 2")
-end
-
-function Door_2()
-    gg.clearResults()
-    gg.setRanges(gg.REGION_ANONYMOUS)
-    gg.searchNumber("20;6619246;6226039;6357090;6619251;6553695;7274607;6226034;6357111;7077996;3211359::41", gg.TYPE_DWORD)
-    gg.searchNumber("3211359", gg.TYPE_DWORD)
-    gg.editAll("3276895", gg.TYPE_DWORD)
-    gg.clearResults()
-    gg.toast("Door Level 2")
-end
-
-function Guide()
-    gg.alert("Select hack, wait, then re-enter settlement.")
-end
-
-StartMenu()
-
-while true do
-    if gg.isVisible(true) then
-        gg.setVisible(false)
-        HOME()
-    end
-end
+xijmf!usvf!ep
+jg!hh/jtWjtjcmf)usvf*!uifo
+hh/tfuWjtjcmf)gbmtf*
+h()
+foe
+foe
